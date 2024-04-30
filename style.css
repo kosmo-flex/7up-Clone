@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width: 100vw;
+    height: 100vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    display: flex;
+    background-color:#009e5f;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+}
+.header img{
+    overflow-clip-margin: content-box;
+    
+    overflow-y: ;
+    overflow-x: ;
+    width: 120px;
+    height: 100px;
+    position:absolute;
+    left: 20px;
+
+}
+.header ul{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 20px;
+}
+
+.header-menu a:hover{
+    color: rgb(17, 47, 27);
+}
+.header li{
+    padding: 17px 11px 17px 11px;
+}
+
+.header a{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+
+.first-page{
+    width: 100%;
+    height: 850px;
+    display: flex;
+}
+
+.first-page-left{
+    width: 30%;
+    height: 100%;
+}
+
+.first-page-right{
+    width: 70%;
+    height: 100%;
+
+}
+
+
+.collapse{
+    height: 1800px;
+    width: 100%;
+    background-color:#009e5f;
+}
+
+
+.recepie{
+    width: 100%;
+    height: 33%;
+
+}
+
+.all-recepies{
+    width: 100%;
+    height: 34%;
+}
+
+
+
+.first-page-right{
+    background-image: url(images/7up_featured.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.play-btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.first-page-left img{
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.first-page-left h2{
+    color: #009e5f;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: -4px 0px 10px;
+    padding-bottom: 20px;
+}
+
+.explore{
+    color: #009e5f;
+    border: solid 3px #009e5f ;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 900;
+    align-items: center;
+}
+
+.first-page-left{
+    .explore:hover{
+        background-color: #009e5f;
+        color: aliceblue;
+    }
+    transition:all 200ms ease;
+}
+
+
+.second-page{
+    display: flex;
+    width: 100%;
+    height: 900px;
+}
+
+.second-page img{
+    width: 100%;
+    height: 100%;
+}
+.elements{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+}
+
+.elements h1{
+    font-size: 66px;
+    font-weight: 900;
+    margin: 20px 0px;
+    font-family: inherit;
+}
+.elements p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.elements a{
+    color: #009e5f;
+    display: inline-block;
+    align-items: center;
+    margin-top: 20px;
+    border: solid 3px #009e5f;
+    position: absolute;
+    text-decoration: none;
+    background-color:white;
+    font-size: 25px;
+    padding: 10px 10px;
+    font-weight: 900;
+    background-position: right bottom;
+    backface-visibility: hidden;
+}
+
+.second-page{
+    .elements a:hover{
+        background-color: #009e5f;
+        color:white;
+    }
+    
+    
+    transition: all 200ms ease;
+  
+}
+
+ .cocktail{
+    height: 38%;
+    width: 100%;
+    background-image: url(images/module_cocktail.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+} 
+
+.cocktail-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 35px;
+    background-color: #fe5887;
+    color: white;
+    padding: 20px 20px 18px;
+    font-weight: 900;
+    opacity: 1;
+}
+
+.cocktail:hover{
+    .cocktail-btn{
+        transform: scale(1.2);
+    }
+}
+
+.recepie{
+    width: 100%;
+    height: 38%;
+    background-image: url(images/module_cooking.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.recepie-btn{
+    background-color: #6ba13f;
+    font-size: 35px;
+    text-transform: uppercase;
+    display: inline-block;
+    color:  white;
+    padding: 20px 20px 18px;
+    font-weight: 900;
+    opacity: 1;
+
+}
+
+.recepie:hover{
+    .recepie-btn{
+        transform: scale(1.2);
+        scroll-behavior: smooth;
+    }
+}
+
+.all-recepies{
+    width: 100%;
+    height: 38%;
+    background-image: url(images/module_seeall.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.all-recepie-btn{
+    display: inline-block;
+    background-color: #c064ac;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 20px 18px;
+    font-weight: 900;
+    opacity: 1;
+}
+
+.all-recepies:hover{
+    .all-recepie-btn{
+        transform: scale(1.2);
+    }
+}
+
+.collapse a{
+    text-decoration: none;
+    color: white;
+
+}
+.items{
+    width: 100%;
+    height: 700px;
+    background-image: url(images/rotate.png);
+    background-size: cover;
+}
+.footer-1{
+    width: 100%;
+    height: 800px;
+    background-image: url(images/footer-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+
+}
+
+.footer-2{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.footer-nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.footer-nav ul li{
+    padding: 0px 13px;
+    font-size: 15px;
+
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #636363;
+    white-space: nowrap;
+
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a{
+    font-size: 25px;
+}
+
+.utility a{
+     white-space: wrap;
+
+}
+
+.credit{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.footer img{
+    height: 200px;
+    width: auto;
+}
+
+
+@media(max-width:425px){
+    .first-page-right{
+        background-position-x: center;
+    }
+}
+
+
+@media(max-width:425px){
+    .first-page-left{
+        background-position-y: center;
+    }
+}
+
+
+
+ 
